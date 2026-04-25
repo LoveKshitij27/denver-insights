@@ -1,4 +1,3 @@
-import WaitlistForm from "./WaitlistForm";
 import AuthHeaderActions from "./AuthHeaderActions";
 
 const painPoints = [
@@ -311,14 +310,6 @@ export default function Home() {
           >
             Start Analysis – ₹1,499
           </a>
-          <div className="mt-12 w-full">
-            <p className="mb-4 text-sm text-zinc-500">
-              Or join the early-access list to hear when we open new spots.
-            </p>
-            <div className="flex justify-center">
-              <WaitlistForm />
-            </div>
-          </div>
         </div>
       </section>
 
