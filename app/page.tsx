@@ -1,3 +1,4 @@
+import Link from "next/link";
 import WaitlistForm from "./WaitlistForm";
 
 const painPoints = [
@@ -68,8 +69,23 @@ const plans = [
 export default function Home() {
   return (
     <main className="flex flex-1 flex-col">
+      {/* TOP NAV */}
+      <header className="absolute left-0 right-0 top-0 z-10 px-6 py-5">
+        <div className="mx-auto flex max-w-6xl items-center justify-between">
+          <div className="text-sm font-semibold tracking-tight text-zinc-900">
+            Denver Insights
+          </div>
+          <Link
+            href="/access"
+            className="inline-flex h-10 items-center rounded-lg bg-blue-700 px-5 text-sm font-medium text-white transition hover:bg-blue-800"
+          >
+            Access Denver
+          </Link>
+        </div>
+      </header>
+
       {/* HERO */}
-      <section className="border-b border-zinc-100 bg-gradient-to-b from-blue-50/40 to-white px-6 py-24 sm:py-32">
+      <section className="relative border-b border-zinc-100 bg-gradient-to-b from-blue-50/40 to-white px-6 pt-28 pb-24 sm:pt-32 sm:pb-32">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <div className="mb-6 text-sm font-medium uppercase tracking-[0.18em] text-blue-700">
             Denver Insights
