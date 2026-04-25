@@ -1,5 +1,5 @@
-import Link from "next/link";
 import WaitlistForm from "./WaitlistForm";
+import AuthHeaderActions from "./AuthHeaderActions";
 
 const painPoints = [
   'Hundreds of free-text return reasons like "leaked", "damaged", "didn\'t like it"',
@@ -75,12 +75,7 @@ export default function Home() {
           <div className="text-sm font-semibold tracking-tight text-zinc-900">
             Denver Insights
           </div>
-          <Link
-            href="/access"
-            className="inline-flex h-10 items-center rounded-lg bg-blue-700 px-5 text-sm font-medium text-white transition hover:bg-blue-800"
-          >
-            Access Denver
-          </Link>
+          <AuthHeaderActions />
         </div>
       </header>
 
